@@ -26,7 +26,7 @@ jobs:
           file: ./Dockerfile
 #          builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: bengotch/simplewhale:latest
+          tags: damjoy/simplewhale:latest
 
           
     - name: Image digest
