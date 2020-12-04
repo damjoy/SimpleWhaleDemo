@@ -22,9 +22,9 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v1
       with:
-          context: .
+          context: ./
           file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
+#          builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: bengotch/simplewhale:latest
 
