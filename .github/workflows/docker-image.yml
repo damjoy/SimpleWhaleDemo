@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-#    - name: Build the Docker image
-#      run: docker build . --file Dockerfile --tag bengotch/simplewhale:latest
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag bengotch/simplewhale:latest
 
     - name: Checkout Repo
       uses: actions/checkout@v2 
