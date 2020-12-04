@@ -23,11 +23,8 @@ jobs:
          id: docker_build
          uses: docker/build-push-action@v2
          with:
-          context: ./ 
-          file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
-          push: true
-          tags: damjoy/simplewhaledemo:latest
+           push: true
+           tags: damjoy/simplewhaledemo:latest
       
       - name: Update repo description
         uses: peter-evans/dockerhub-description@v2
