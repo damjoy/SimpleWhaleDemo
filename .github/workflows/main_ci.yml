@@ -26,12 +26,6 @@ jobs:
            push: true
            tags: damjoy/simplewhaledemo:latest
       
-      - name: Update repo description
-        uses: peter-evans/dockerhub-description@v2
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-          repository: damjoy/dockerhub-description
 
           
 
